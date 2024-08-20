@@ -5,6 +5,7 @@ Install terlebih dahulu
 # Printah
 ```
 apt install curl wget -y
+git clone https://github.com/sulhanqidri/AutoInstallGenieACS
 ```
 # Penjelasan
 Download file bash
