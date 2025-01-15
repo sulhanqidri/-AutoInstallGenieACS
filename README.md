@@ -5,18 +5,16 @@ Install terlebih dahulu
 # Printah
 ```
 apt install git curl wget -y
-git clone https://github.com/sulhanqidri/MoodleInstall
+git clone https://github.com/sulhanqidri/AutoInstallGenieACS
 ```
 # Penjelasan
 Download file bash
 Ubah hak akses file menjadi execute
 
 ```
-cd MoodleInstall
-chmod +x autoinstallmoodle.sh
-./autoinstallmoodle.sh
+cd AutoInstallGenieACS
+chmod +x AutoInstallGenieACS.sh
+./AutoInstallGenieACS.sh
 ```
 
 # Silahkan buka berdasarkan ip address
-
-
