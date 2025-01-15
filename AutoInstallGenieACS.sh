@@ -75,7 +75,7 @@ if !  systemctl is-active --quiet genieacs-{cwmp,fs,ui,nbi}; then
     mkdir -p /opt/genieacs
     mkdir -p /opt/genieacs/ext
     chown genieacs:genieacs /opt/genieacs/ext
-    cat << EOF > /opt/genieacs/genieacs.env
+cat << EOF > /opt/genieacs/genieacs.env
 GENIEACS_CWMP_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-cwmp-access.log
 GENIEACS_NBI_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-nbi-access.log
 GENIEACS_FS_ACCESS_LOG_FILE=/var/log/genieacs/genieacs-fs-access.log
@@ -91,7 +91,7 @@ EOF
     chown genieacs. /var/log/genieacs
     # create systemd unit files
 ## CWMP
-    cat << EOF > /etc/systemd/system/genieacs-cwmp.service
+cat << EOF > /etc/systemd/system/genieacs-cwmp.service
 [Unit]
 Description=GenieACS CWMP
 After=network.target
@@ -106,7 +106,7 @@ WantedBy=default.target
 EOF
 
 ## NBI
-    cat << EOF > /etc/systemd/system/genieacs-nbi.service
+cat << EOF > /etc/systemd/system/genieacs-nbi.service
 [Unit]
 Description=GenieACS NBI
 After=network.target
@@ -121,7 +121,7 @@ WantedBy=default.target
 EOF
 
 ## FS
-    cat << EOF > /etc/systemd/system/genieacs-fs.service
+cat << EOF > /etc/systemd/system/genieacs-fs.service
 [Unit]
 Description=GenieACS FS
 After=network.target
@@ -136,7 +136,7 @@ WantedBy=default.target
 EOF
 
 ## UI
-    cat << EOF > /etc/systemd/system/genieacs-ui.service
+cat << EOF > /etc/systemd/system/genieacs-ui.service
 [Unit]
 Description=GenieACS UI
 After=network.target
